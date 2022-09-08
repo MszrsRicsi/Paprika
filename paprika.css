@@ -1,0 +1,23 @@
+body{
+    background-color: #FFEFD5;
+    color: #8B4513;
+    margin: 0;
+    padding: 0;
+}
+
+.fejlec{
+    background-image: url("paprikafejlec.png");
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+ul{
+    list-style-image: url("chili-pepper-icon.gif");
+    padding-top: 20px;
+}
+
+li{
+    border: 2px solid lightblue;
+    width: 150px;
+    text-indent: 5px;
+}
