@@ -2,20 +2,23 @@ body{
     background-color: #FFEFD5;
     color: #8B4513;
     margin: 0;
+    padding: 0;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 0;
-    width: 80%;
 }
 
 .fejlec{
+    background-image: url("paprikafejlec.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 100px;
     background-repeat: no-repeat;
-    width: 100%;
 }
 
 h1{
     margin: 0;
+    padding: 25px;
+    color: black;
 }
 
 ul{
@@ -27,52 +30,54 @@ li{
     border: 2px solid lightblue;
     width: 150px;
     text-indent: 5px;
-    margin: 5%;
     background-color: white;
-    padding: 5px;
-}
-
-.menu{
-    float: left;
-    width: 20%;
-}
-
-.tartalom{
-    float: right;
-    margin-left: 10%;
-    width: 70%;
-}
-
-a{
-    text-decoration: none;
+    margin: 5px;
     color: black;
 }
 
-img{
-    width: 100%;
-    height: 100px;
+table, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
 }
 
 table{
     width: 300px;
 }
 
-table, td, th{
-    border: 1px solid black;
-    margin: auto;
-    padding: 2px;
-    border-collapse: collapse;
-}
-
-#fajta{
-    text-align: left;
-}
-
-th{
-    padding: 10px;
-}
-
-#ertek{
+#kozep{
     text-align: center;
     width: 120px;
+}
+
+.menu{
+    display: grid;
+    grid-column: 3;
+    float: left;
+    max-width: 250px;
+    margin-right: 5%;
+}
+
+p{
+    text-align: justify;
+    margin-right: 5%;
+}
+
+@media (max-width: 550px) {
+    h1{
+        font-size: 5vw;
+        vertical-align: middle;
+    }
+    
+    table{
+        width: 200px;
+    }
+
+    #kozep{
+        width: 80px;
+    }
+
+    .fejlec{
+        height: 80px;
+    }
 }
