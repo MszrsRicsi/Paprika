@@ -12,7 +12,6 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100px;
-    background-repeat: no-repeat;
 }
 
 h1{
@@ -43,6 +42,7 @@ table, td, tr{
 
 table{
     width: 300px;
+    margin-bottom: 5%;
 }
 
 #kozep{
@@ -52,7 +52,6 @@ table{
 
 .menu{
     display: grid;
-    grid-column: 3;
     float: left;
     max-width: 250px;
     margin-right: 5%;
@@ -61,6 +60,10 @@ table{
 p{
     text-align: justify;
     margin-right: 5%;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media (max-width: 550px) {
@@ -79,5 +82,11 @@ p{
 
     .fejlec{
         height: 80px;
+    }
+}
+
+@media (max-width: 350px) {
+    .fejlec{
+        height: 60px;
     }
 }
