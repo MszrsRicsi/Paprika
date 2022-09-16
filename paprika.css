@@ -34,10 +34,20 @@ li{
     color: black;
 }
 
-table, td, tr{
+table, td, tr, th{
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
+    vertical-align: middle;
+}
+
+td{
+    padding: 5px;
+}
+
+#balra{
+    text-align: left;
+    text-indent: 3px;
 }
 
 table{
