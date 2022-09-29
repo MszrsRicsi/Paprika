@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paprikák</title>
+    <title>Paprika</title>
     <link rel="stylesheet" href="paprika.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="fejlec">
@@ -15,12 +16,13 @@
         <h2>Fajtái</h2>
         <p>Öt fajtát, de sok változattal termesztik szerte a világon.</p>
 
-        <ul>
+        <ul class="topnav" id="myTopnav">
             <a href="sok.png" target="_blank"><li>Közönséges paprika</li></a>
             <a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" target="_blank"><li>Cserjés paprika</li></a>
             <a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" target="_blank"><li>Kínai paprika</li></a>
             <a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" target="_blank"><li>Bogyós paprika</li></a>
             <a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" target="_blank"><li>Szőrös paprika</li></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </ul>
     </div>
     <div class="Tartalom">
@@ -32,7 +34,7 @@
         
         <table>
             <tr>
-                <th id="balra">Paprika</th>
+                <th>Paprika</th>
                 <th id="kozep">Csípősség (Scoville érték)</th>
             </tr>
             <tr>
@@ -53,5 +55,15 @@
             </tr>
         </table>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
