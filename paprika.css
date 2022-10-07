@@ -22,15 +22,15 @@ h1{
 
 ul{
     list-style-image: url("chili-pepper-icon.gif");
-    padding-top: 20px;
 }
 
 li{
     border: 2px solid lightblue;
-    width: 150px;
+    width: 175px;
     text-indent: 5px;
     background-color: white;
     margin: 5px;
+    padding: 10px;
     color: black;
 }
 
@@ -106,7 +106,7 @@ a{
     li{
         padding: 10px;
         border: none;
-        width: 88%;
+        width: 95%;
         margin: 0%;
         font-size: large;
         border: 0.5px solid peachpuff;
@@ -125,10 +125,44 @@ a{
     .icon{
         width: 36px;
     }
+    .tartalom{
+        float: left;
+        clear: both;
+    }
+    .menu{
+        min-width: 100%;
+    }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .icon{
         visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    li{
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    li{
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    li{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    li{
+        width: 88%;
+    }
+    table{
+        margin: 0%;
     }
 }
