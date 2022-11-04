@@ -9,15 +9,16 @@ body{
 
 .fejlec{
     background-image: url("paprikafejlec.png");
-    background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
     height: 100px;
 }
 
 h1{
     margin: 0;
     padding: 25px;
-    color: black;
+    color: #8B4513;
+    text-shadow: 1px 1px #8B4513;;
 }
 
 ul{
@@ -28,21 +29,31 @@ li{
     border: 2px solid lightblue;
     width: 175px;
     text-indent: 5px;
-    background-color: white;
+    background-color: #F8EDE3;
     margin: 5px;
     padding: 10px;
-    color: black;
+    color: #8B4513;
 }
 
 table, td, tr{
-    border: 1px solid black;
+    border: 2px solid #7D6E83;
     border-collapse: collapse;
     margin: auto;
+}
+
+th{
+    color: #8B4513;
+}
+
+td{
+    text-indent: 3px;
 }
 
 table{
     width: 300px;
     margin-bottom: 5%;
+    box-shadow: 1px 2px 5px 3px;
+    color: #7D6E83;
 }
 
 #kozep{
@@ -60,18 +71,14 @@ table{
 p{
     text-align: justify;
     margin-right: 5%;
+    color: #7D6E83;
 }
 
 a{
     text-decoration: none;
 }
 
-@media (max-width: 550px) {
-    h1{
-        font-size: 5vw;
-        vertical-align: middle;
-    }
-    
+@media (max-width: 550px) { 
     table{
         width: 200px;
     }
@@ -81,7 +88,7 @@ a{
     }
 
     .fejlec{
-        height: 80px;
+        height: 130px;
     }
 }
 
@@ -140,6 +147,13 @@ a{
     }
 }
 
+
+@media screen and (max-width: 550px) and (min-width: 507px) {
+    h1{
+       padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 470px) {
     li{
         width: 94%;
@@ -156,6 +170,11 @@ a{
     li{
         width: 90%;
     }
+    
+    h1{
+        font-size: 25px;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 280px) {
@@ -164,5 +183,12 @@ a{
     }
     table{
         margin: 0%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    h1{
+        font-size: 25px;
+        padding-left: 12px;
     }
 }
