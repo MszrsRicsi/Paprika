@@ -5,20 +5,22 @@ body{
     padding: 0;
     margin-left: 10%;
     margin-right: 10%;
+    text-shadow: .5px .5px #8B4513;
 }
 
 .fejlec{
     background-image: url("paprikafejlec.png");
+    background-repeat: no-repeat;
     background-size: 100%;
-    background-size: cover;
     height: 100px;
+    border: 1px solid #FF5403;
+    margin-bottom: 10px;
 }
 
 h1{
     margin: 0;
     padding: 25px;
-    color: #8B4513;
-    text-shadow: 1px 1px #8B4513;;
+    color: #7D6E83;
 }
 
 ul{
@@ -29,31 +31,32 @@ li{
     border: 2px solid lightblue;
     width: 175px;
     text-indent: 5px;
-    background-color: #F8EDE3;
+    background-color: white;
     margin: 5px;
     padding: 10px;
-    color: #8B4513;
+    color: black;
+    transition: .35s;
 }
 
-table, td, tr{
-    border: 2px solid #7D6E83;
-    border-collapse: collapse;
-    margin: auto;
+li:hover{
+    background-color: #D0B8A8;
+    color: white;
 }
 
-th{
-    color: #8B4513;
-}
-
-td{
-    text-indent: 3px;
+td, tr{
+    border: 1px solid #7D6E83;
+    padding: 10px;
 }
 
 table{
+    border-collapse: collapse;
+    margin: auto;
     width: 300px;
+    margin-top: 75px;
     margin-bottom: 5%;
-    box-shadow: 1px 2px 5px 3px;
-    color: #7D6E83;
+    border-radius: 10px;
+    box-shadow: #7D6E83 1px 1px 10px 2px;
+    background-color: #DFD3C3;
 }
 
 #kozep{
@@ -66,19 +69,51 @@ table{
     float: left;
     max-width: 250px;
     margin-right: 5%;
+    background-color: #DFD3C3;
+    padding: 5px;
 }
 
 p{
     text-align: justify;
     margin-right: 5%;
-    color: #7D6E83;
 }
 
 a{
     text-decoration: none;
 }
 
-@media (max-width: 550px) { 
+@media screen and (max-width: 760px) {
+    table{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    table{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    table{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    table{
+        margin-top: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    h1{
+        font-size: 5vw;
+        vertical-align: middle;
+    }
+    
     table{
         width: 200px;
     }
@@ -88,7 +123,7 @@ a{
     }
 
     .fejlec{
-        height: 130px;
+        height: 80px;
     }
 }
 
@@ -147,13 +182,6 @@ a{
     }
 }
 
-
-@media screen and (max-width: 550px) and (min-width: 507px) {
-    h1{
-       padding-top: 40px;
-    }
-}
-
 @media screen and (max-width: 470px) {
     li{
         width: 94%;
@@ -170,11 +198,6 @@ a{
     li{
         width: 90%;
     }
-    
-    h1{
-        font-size: 25px;
-        padding: 30px;
-    }
 }
 
 @media screen and (max-width: 280px) {
@@ -183,12 +206,5 @@ a{
     }
     table{
         margin: 0%;
-    }
-}
-
-@media screen and (max-width: 260px) {
-    h1{
-        font-size: 25px;
-        padding-left: 12px;
     }
 }
